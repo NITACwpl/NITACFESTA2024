@@ -27,14 +27,128 @@ body {
     align-items: center; /* 各SVGを中央揃え */
 }
 
-/* スクロールで動くSVG画像 */
-.title, .poem{
-  display: block;
-  margin: 20px 0; /* 各SVGの間にスペースを追加 */
-  flex-direction: column; /* 縦に並べる */
-  align-items: center; /* 各SVGを中央揃え */
-}
-
+/*title部分*/
 .title-image{
   margin: 10%;
+}
+
+/*ACCESS部分*/
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.access-image{
+  margin: 50% 0 5% 0;
+}
+
+.circle>div {
+  width: 80%;
+  height: 70%;
+  border: solid 3px #ffffff;
+  border-radius: 10px;
+  background: #686f89;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: "Monomaniac One", sans-serif;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+  font-size: 5em; 
+  margin: auto;
+}
+
+p {
+  font-family: "M PLUS 1p", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text {
+  background: linear-gradient(transparent 70%, #da00ec 30%);
+}
+
+iframe {
+  width: 70%;
+  height: 40vw;
+  max-width: 1000px;
+  max-height: 600px;
+  margin: 7% 0;
+}
+
+.map {
+  font-size: 2em; 
+}
+
+.address {
+  font-size: 2.5em; 
+
+}
+
+.left-align-section {
+  font-size: 2.2em;
+  text-align: left;
+  margin: 1% auto;
+}
+
+.left-align-section p {
+  margin-bottom: 0.8em;
+}
+
+.left-align-section .text:last-child {
+  margin-bottom: 4em;
+}
+@media screen and (max-width: 480px) {
+  .circle {
+      width: 72%;
+      height: 125px; 
+      padding-top: 0;
+  }
+
+  h1 {
+      font-size: 3em; 
+  }
+
+  .circle>div {
+      height: 65%; 
+  }
+
+  iframe {
+      height: 15em; 
+  }
+
+  .map {
+      font-size: 1em; 
+  }
+
+  .address {
+      font-size: 1.5em; 
+  }
+
+  .left-align-section {
+      font-size: 1.2em; 
+  }
+}
+
+
+/*展示部分*/
+.exhibition-img{
+  width: 120%;
+  height: 100%;
 }
