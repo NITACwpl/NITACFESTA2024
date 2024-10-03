@@ -1,3 +1,7 @@
+*{
+  overflow-x: hidden;
+}
+
 body {
   background-color: #010930;
   font-family: Arial, sans-serif;
@@ -6,37 +10,21 @@ body {
   position: center;
 }
 
+
 .haikei{
   position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('background.svg') no-repeat center center;
     background-size: cover;
+    background-image: url(background.svg);
     z-index: -1; /* 背景なので、他の要素の後ろに配置 */
 }
 .top{
   display: flex;
     flex-direction: column; /* 縦に並べる */
     align-items: center; /* 各SVGを中央揃え */
-  overflow: hidden; /* SVGがコンテナを超えないように設定 */
-}
-
-
-
-/* スクロールアニメーション */
-.spacer {
-  height: 100vh;
-}
-
-#animated-svg {
-  transform: scale(0); /* 初期状態で小さくする */
-}
-
-.visible .scroll-svg {
-  opacity: 1;
-  transform: scale(1.2); /* 拡大して見せるアニメーション */
 }
 
 /* スクロールで動くSVG画像 */
@@ -46,17 +34,7 @@ body {
   flex-direction: column; /* 縦に並べる */
   align-items: center; /* 各SVGを中央揃え */
 }
-/* スクロールで動くSVG画像 */
-.scroll-svg {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1; /* コンテンツの上に表示 */  
-}
 
-.svg-wrapper {
-  display: block;
-  margin: 20px 0; /* 各SVGの間にスペースを追加 */
+.title-image{
+  margin: 10%;
 }
-  
