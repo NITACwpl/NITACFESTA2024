@@ -21,7 +21,7 @@ body {
     background-image: url(background.svg);
     z-index: -1; /* 背景なので、他の要素の後ろに配置 */
 }
-.top{
+.top-title{
   display: flex;
     flex-direction: column; /* 縦に並べる */
     align-items: center; /* 各SVGを中央揃え */
@@ -148,7 +148,42 @@ iframe {
 
 
 /*展示部分*/
-.exhibition-img{
-  width: 120%;
-  height: 100%;
+.top-exhibition{
+  position: relative; /* 子要素を重ねるためにrelativeを使用 */
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  background-image: url('ポエム帯.svg');
+  background-size: cover; /* 背景画像を要素全体に表示 */
+  background-position: center; /* 中央に配置 */
+  background-repeat: no-repeat;
+}
+
+
+/* タイムテーブル部分 */
+.top-timetable{
+  position: relative; /* 子要素を重ねるためにrelativeを使用 */
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  background-image: url('DNA.svg');
+  background-size: cover; /* 背景画像を要素全体に表示 */
+  background-position: center; /* 中央に配置 */
+  background-repeat: no-repeat;
+}
+
+
+.poster1{
+  width: 40%;
+  margin: auto;
+  position:absolute;
+  right:53%;
+  bottom:45%;
+}
+.poster2{
+  width:40%;
+  margin: auto;
+  position:absolute;
+  right:7%;
+  bottom:20%;
 }
