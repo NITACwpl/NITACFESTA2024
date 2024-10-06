@@ -1,72 +1,51 @@
 body {
-  /*設置する親要素ページ全体ならbodyなど*/
   position: relative;
   height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #010930;
+  color: #ffffff;
+  text-align: center;
 }
 
-.wrapper{
-  min-height: 100vh;/*①高さの最小値*/
-  position: relative;/*②相対位置*/
+.wrapper {
+  min-height: 100vh;
+  position: relative;
 }
 
-h2{
+h2 {
   font-size: 100px;
   color: #ffffff;
   text-align: center;
-  font-family: Mplus 1p Bold,Noto Sans JP;
+  font-family: "Mplus 1p Bold", "Noto Sans JP", sans-serif;
 }
 
 /* ボタン全体 */
-.flowbtn9{
-  display:inline-block;	
-  font-size:40px;
-  text-decoration:none;
-  transition:.5s;
-  }
-  .flowbtn9 .fa-x-twitter{
-  color:#ffffff;
+.flowbtn9 {
+  display: inline-block;
+  font-size: 120px;
+  text-decoration: none;
+  transition: .5s;
+  color: #ffffff;
+}
 
-  }
-  .flowbtn9 .fa-instagram{
-  color:#ffffff;
+ul.snsbtniti {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* アイコン同士の余白 */
+  padding: 0;
+  list-style: none;
+  margin: 20px auto;
+}
 
-  }
-  ul.snsbtniti{
-  padding:0;
-  }
-  /* アイコン全体の位置 */
-  .snsbtniti{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content:space-between;
-  overflow:hidden;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  /* アイコン同士の余白 */
-  .snsbtniti li{
-   text-align:center;
-   flex:0 0 33%;
-  }
-  /* インスタ・Amazonのアイコンを少し大きく */
-  .flowbtn9 {
-    font-size: 120px;
-  }
-  /* アイコンにマウスを乗せた時 */
-  .flowbtn9:hover{
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
+.snsbtniti li {
+  flex: 0 0 33%;
+  text-align: center;
+}
+
+.flowbtn9:hover, .flowbtn9-2:hover {
   transform: translateY(-5px);
-  }
-
-
-
+}
 
 img {
   margin: auto;
@@ -76,32 +55,78 @@ img {
   object-fit: cover;
 }
 
-
+.push {
+  height: auto;
+}
 
 footer {
-    bottom: 0; /*下に固定*/
-    width: 100%;
-    height: 200px; 
-    text-align: center;
-    background-color: #010930;
-  }
- small{
-  color: #ffffff;
-  height: 10rem;
+  width: 100%;
+  min-height: 200px;
   text-align: center;
-  font-size: 25px;
- }
- footer:before{
-  content:"";
-  position:absolute;
-  left:0;
-  display:block;
-  margin-top:-40px;
-  width:100%;
-  border-top:10px solid #ffffff;
+  position: relative;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 10px solid #ffffff;
 }
 .push {
   height: 200px;/*フッターと同じ高さに指定*/
 }
+.flowbtn9-2{
+  display: inline-block;
+  font-size: 40px;
+  text-decoration: none;
+  margin-top:45px;
+  padding-left: 30px;
+  transition: .5s;
+  color: #ffffff;
+}
+ul.snsbtniti2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* アイコン同士の余白 */
+  padding: 0;
+  list-style: none;
+  margin: 20px auto;
+}
+.snsbtniti2 li {
+  flex: 0 0 33%;
+}
+.box {
+  list-style-type: none;
+}
 
- 
+.left, .right {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  line-height: 15px;
+}
+
+.productor_name {
+  font-size: 40px;
+}
+
+.productor_mail {
+  font-size: 20px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #ffffff;
+}
+.address{
+  text-decoration: none;
+  color: #ffffff;
+}
+.copyright {
+  color: #9ca3af;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.web{
+  color: #9ca3af;
+  text-decoration: none;
+}

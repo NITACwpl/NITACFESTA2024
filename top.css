@@ -166,7 +166,7 @@ iframe {
   width: 100%;
   height: 50%;
   margin: 0 auto;
-  background-image: url('DNA.svg');
+  background-image: url('DNA1.svg');
   background-size: cover; /* 背景画像を要素全体に表示 */
   background-position: center; /* 中央に配置 */
   background-repeat: no-repeat;
@@ -186,4 +186,41 @@ iframe {
   position:absolute;
   right:7%;
   bottom:20%;
+}
+
+/* SNS部分 */
+.sns_flex{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30%;
+}
+.top-insta_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15%;
+  position: relative; /* 子要素を重ねるためにrelativeを使用 */
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  background-image: url('DNA2.svg');
+  background-size: cover; /* 背景画像を要素全体に表示 */
+  background-position: center; /* 中央に配置 */
+  background-repeat: no-repeat;
+}
+h2{
+  color: #000000;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  background-color: #FFFFFF;
+  width: 200px;
+  border-radius: 9px;
+}
+.instagram_media{
+  width: 100%;
+  height: 100%;
 }
