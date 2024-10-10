@@ -27,6 +27,7 @@ h2 {
   text-decoration: none;
   transition: .5s;
   color: #ffffff;
+  position: abs0lute;
 }
 
 ul.snsbtniti {
@@ -75,6 +76,7 @@ footer:before {
 }
 .push {
   height: 200px;/*フッターと同じ高さに指定*/
+  height: auto;
 }
 .flowbtn9-2{
   display: inline-block;

@@ -203,7 +203,7 @@ iframe {
   margin-bottom: 15%;
   position: relative; /* 子要素を重ねるためにrelativeを使用 */
   width: 100%;
-  height: 50%;
+  height: 100%;
   margin: 0 auto;
   background-image: url('DNA2.svg');
   background-size: cover; /* 背景画像を要素全体に表示 */
@@ -223,4 +223,128 @@ h2{
 .instagram_media{
   width: 100%;
   height: 100%;
+}
+
+/* footer部分 */
+.top-footer{
+  background-color: #010930;
+  min-height: 100vh;
+  position: relative;
+}
+.footer-up {
+  font-size: 300%;
+  margin: 10% 0 0 0;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Mplus 1p Bold", "Noto Sans JP", sans-serif;
+}
+/* ボタン全体 */
+.flowbtn9 {
+  display: inline-block;
+  font-size: 120px;
+  text-decoration: none;
+  transition: .5s;
+  color: #ffffff;
+}
+
+ul.snsbtniti {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* アイコン同士の余白 */
+  padding: 0;
+  list-style: none;
+  margin: 20px auto;
+}
+
+.snsbtniti li {
+  flex: 0 0 33%;
+  text-align: center;
+}
+
+.flowbtn9:hover, .flowbtn9-2:hover {
+  transform: translateY(-5px);
+}
+.footer-img {
+  margin: 0 auto;
+  display: block;
+  max-width: 200%;
+  height: auto;
+  object-fit: cover;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  position: relative;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 10px solid #ffffff;
+}
+.push {
+  height: 200px;/*フッターと同じ高さに指定*/
+  height: auto;
+}
+.flowbtn9-2{
+  display: inline-block;
+  font-size: 40px;
+  text-decoration: none;
+  margin-top:45px;
+  padding-left: 30px;
+  transition: .5s;
+  color: #ffffff;
+}
+ul.snsbtniti2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* アイコン同士の余白 */
+  padding: 0;
+  list-style: none;
+  margin: 20px auto;
+}
+.snsbtniti2 li {
+  flex: 0 0 33%;
+}
+.box {
+  list-style-type: none;
+}
+.left, .right {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  line-height: 15px;
+}
+
+.productor_name {
+  font-size: 40px;
+  margin: 5% 0;
+  height: 100%;
+  text-align: center;
+}
+
+.productor_mail {
+  font-size: 20px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+.address{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+.copyright {
+  color: #9ca3af;
+  font-size: 10px;
+  margin: 10px 0;
+}
+.web{
+  color: #9ca3af;
+  text-decoration: none;
 }
