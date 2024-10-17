@@ -90,6 +90,7 @@ iframe {
   max-width: 1000px;
   max-height: 600px;
   margin: 7% 0;
+  transform: scale(1.0);
 }
 
 .map {
