@@ -7,8 +7,44 @@ body {
   font-family: Arial, sans-serif;
   height: 200vh; /* スクロールするために十分な高さを設定 */
   position: relative;
-  position: center;
+  margin: 0%;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/img/background.svg);
+    z-index: -1; /* 背景なので、他の要素の後ろに配置 */
 }
+
+/* オープニング
+全画面オーバーレイのスタイル */
+#opening-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* メインコンテンツは最初非表示に */
+#main-content {
+  display: none;
+}
+
+/* 動画のスタイル */
+video {
+  width: auto;
+  height: 72%;
+  object-fit: cover;
+  background-color: #010930;
+} */
 
 
 .haikei{
@@ -18,21 +54,30 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url(background.svg);
+    background-image: url(/img/background.svg);
     z-index: -1; /* 背景なので、他の要素の後ろに配置 */
 }
 .top-title{
   display: flex;
-    flex-direction: column; /* 縦に並べる */
-    align-items: center; /* 各SVGを中央揃え */
+  flex-direction: column; /* 縦に並べる */
+  align-items: center; /* 各SVGを中央揃え */
 }
 
 /*title部分*/
-.title-image{
-  margin: 10%;
+.title-image img{
+  margin: 50% 0 20%;
+  position: centar;
+  width: 100%;
+  height: 100%;
+  max-width: 580px;
+  max-height: 664px;
 }
 
 /*ACCESS部分*/
+.top-access{
+  margin-top: 20%;
+}
+
 .flexbox {
   display: flex;
   flex-direction: column;
@@ -93,17 +138,16 @@ a {
   margin: 0 0 5% 0;
 }
 
+.address-sentence {
+  font-size: 1.5em; 
+}
+
 .map {
   font-size: 2em; 
 }
 
-.address {
-  font-size: 2.5em; 
-
-}
-
 .left-align-section {
-  font-size: 2.2em;
+  font-size: 1.5em;
   text-align: left;
   margin: 1% auto;
 }
@@ -152,21 +196,26 @@ a {
 .top-exhibition{
   position: relative; /* 子要素を重ねるためにrelativeを使用 */
   width: 100%;
-  height: 50%;
-  margin: 0 auto;
-  background-image: url('obi_right.svg');
+  height: 70vh;
+  margin: 70% 0 30%;
+  background-image: url('/img/obi_right.svg');
   background-size: cover; /* 背景画像を要素全体に表示 */
   background-position: center; /* 中央に配置 */
   background-repeat: no-repeat;
+}
+
+.more{
+  font-size: 4em;
+  color: #FFFFFF;
 }
 
 /*バザー部分*/
 .top-bazzar{
   position: relative;
   width: 100%;
-  height: 50%;
-  margin: 0 auto;
-  background-image: url('obi_left.svg');
+  height: 70vh;
+  margin: 40% 0 60%;
+  background-image: url('/img/obi_left.svg');
   background-size: cover; /* 背景画像を要素全体に表示 */
   background-position: center; /* 中央に配置 */
   background-repeat: no-repeat;
@@ -181,8 +230,8 @@ a {
   position: relative; /* 子要素を重ねるためにrelativeを使用 */
   width: 100%;
   height: 50%;
-  margin: 0 auto;
-  background-image: url('DNA1.svg');
+  margin: 20% auto;
+  background-image: url('/img/DNA1.svg');
   background-size: cover; /* 背景画像を要素全体に表示 */
   background-position: center; /* 中央に配置 */
   background-repeat: no-repeat;
@@ -194,17 +243,98 @@ a {
   margin: auto;
   position:absolute;
   right:53%;
-  bottom:45%;
+  bottom:50%;
 }
 .poster2{
   width:40%;
   margin: auto;
   position:absolute;
   right:7%;
-  bottom:20%;
+  bottom:0%;
 }
 
+/* アンケート部分 */
+.top-questionary{
+  position: relative;
+  background-image: url('/img/obi3.svg');
+  background-size: cover; /* 背景画像を要素全体に表示 */
+  background-position: center; /* 中央に配置 */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: auto;
+  margin-top: 50%;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* 左半分 */
+.text-section {
+  flex: 1;
+  margin-left: 10%;
+  width: 120%;
+}
+
+.text-section h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: "Monomaniac One", sans-serif;
+}
+
+.text-section p {
+  font-size: 1rem;
+  margin: 10px 0 20px;
+  position: centar;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.button {
+  display: inline-block;
+  padding: 5%;
+  margin-left: 25%;
+  color: #00f0ff;
+  border: 2px solid #00f0ff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #00f0ff;
+  color: #1b1b2f;
+}
+
+/* 右半分（画像） */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
 /* SNS部分 */
+.top-SNS{
+  margin-top: 80%;
+  margin-bottom: 60%;
+}
 .sns_flex{
   align-items: center;
   display: flex;
@@ -221,7 +351,8 @@ a {
   width: 100%;
   height: 50%;
   margin: 0 auto;
-  background-image: url('DNA2.svg');
+  margin-top: 10%;
+  background-image: url('/img/DNA2.svg');
   background-size: cover; /* 背景画像を要素全体に表示 */
   background-position: center; /* 中央に配置 */
   background-repeat: no-repeat;
@@ -241,14 +372,37 @@ h2{
   height: 100%;
 }
 
+
+/* バナー広告のコンテナ */
+.top-bannar {
+  width: 80%;
+  margin-bottom: 40%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 各バナー */
+.banner-ad {
+  width: 80%;
+  margin: 6% 10%; /* バナー同士の間隔 */
+  display: block; /* a要素全体をクリック可能に */
+}
+
+.banner-ad img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* 角を丸くする */
+}
+
 /* footer部分 */
 .top-footer{
-  margin: 0;
-    padding: 0;
-    background-color: #010930;
-    color: #ffffff;
-    text-align: center;
-    font-family: "Mplus 1p Bold", "Noto Sans JP", sans-serif;
+  margin-top: 40%;
+  padding: 0;
+  background-color: #010930;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Mplus 1p Bold", "Noto Sans JP", sans-serif;
 }
 .footer-wrapper {
   min-height: 100vh;

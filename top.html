@@ -4,37 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>top-page</title>
-  <link rel="stylesheet" href="top.css">
+  <link rel="stylesheet" href="/css/top.css">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 </head>
 <body>
-  <div class="haikei"></div>
-
+  <div id="opening-animation">
+    <video id="opening-video" autoplay muted>
+        <source src="/video/try_animation_1.mp4" type="video/mp4">
+    </video>
+</div>
   <br>
 
   <div class="top-title">
     <div class="title-image">
-      <img src="title.svg" alt="">
+      <img src="/img/title.svg" alt="">
     </div>
 
     <div class="day-image">
-      <img src="day.svg" alt="">
+      <img src="/img/day.svg" alt="">
     </div>
-  </div>
-
-  <div class="top-poem">
-
   </div>
 
   <div class="top-access">
     <div class="flexbox">
       <div class="access-image">
-         <img src="access-title.svg" alt=""> 
+         <img src="/img/access-title.svg" alt=""> 
       </div>
-      <a href="https://maps.app.goo.gl/F3u2foShKT98khvg7" style="text-align: center;"><img src="map.png" alt="" class="map-image"></a>
-      <p class="address">JR魚住駅から徒歩5分</p>
-      <p class="address">山陽魚住駅から徒歩10分</p>
+      <a href="https://maps.app.goo.gl/F3u2foShKT98khvg7" style="text-align: center;"><img src="/img/map.png" alt="" class="map-image"></a>
+      <p class="address-sentence">JR魚住駅から徒歩5分</p>
+      <p class="address-sentence">山陽魚住駅から徒歩10分</p>
       <a href="https://maps.app.goo.gl/F3u2foShKT98khvg7">
           <p class="map">→グーグルマップで見る</p>
+      </a>
+      <br>
+      <a href="">
+          <p class="map">→校内マップはこちら</p>
       </a>
       <div class="left-align-section">
           <p>※<span style="color: #da00ec;">注意点</span></p>
@@ -45,13 +49,17 @@
   </div>
 
   <div class="top-exhibition">
-    <div class="exhibition-p">
-
+    <div style="text-align: center;">
+      <h1 class="exhibition-title">Exhibition</h1>
+    </div>
+    
+    <div style="text-align:end;">
+      <a href="https://www.google.co.jp/"  class="more">more➪ </a>
     </div>
   </div>
   
   <div class="neon-guitar">
-     <img src="neon-gutar.png" alt="">
+     <img src="/img/neon-gutar.png" alt="">
   </div>
 
   <div class="top-bazzar" style="text-align: center;">
@@ -60,25 +68,31 @@
     </div>
   </div>
   
+  <br>
+  <br>
   <div class="top-timetable" style="text-align: center;">
-    <img src="poster-all.svg" class="poster1"> 
-    <img src="poster-music.svg" class="poster2">
+    <img src="/img/poster-all.svg" class="poster1"> 
+    <img src="/img/poster-music.svg" class="poster2">
   </div>
   <br>
   <br>
-  <br>
-  <br>
-  <div class="FAQ">
-    <div>
 
+  <div class="top-questionary">
+    <div class="container">
+      <!-- 左半分 -->
+      <div class="text-section">
+        <h2>高専祭感想<br>アンケート</h2>
+        <p>ぜひアンケートのご協力お願いします！</p>
+        <a href="https://example.com" class="button">CLICK!!</a>
+      </div>
+      
+      <!-- 右半分 -->
+      <div class="image-section">
+        <img src="/img/questionary-image.svg" alt="雷の画像">
+      </div>
     </div>
   </div>
 
-  <div class="questionary">
-    <div>
-
-    </div>
-  </div>
 
   <div class="top-SNS">
     <div class="top-insta_box">
@@ -91,11 +105,27 @@
     </div>
   </div>
 
-  <div class="banner">
-    <div>
-
-    </div>
+  <div class="top-banner">
+    <a href="https://example.com" target="_blank" class="banner-ad">
+      <img src="/img/sujinikomi_hukujyu.jpg" alt="広告バナー1">
+    </a>
+    <a href="https://example.com" target="_blank" class="banner-ad">
+      <img src="/img/kaihotunoen.jpg" alt="広告バナー2">
+    </a>
+    <a href="https://example.com" target="_blank" class="banner-ad">
+      <img src="/img/sibahara_seikeigeka.jpg" alt="広告バナー3">
+    </a>
+    <a href="https://example.com" target="_blank" class="banner-ad">
+      <img src="/img/9th.jpg" alt="広告バナー4">
+    </a>
+    <a href="https://example.com" target="_blank" class="banner-ad">
+      <img src="/img/locohome.jpg" alt="広告バナー5">
+    </a>
+    <a href="https://example.com" target="_blank" class="banner-ad">
+      <img src="/img/akashi-kikai_industry.jpg" alt="広告バナー6">
+    </a> 
   </div>
+
   <div class="top-footer">
     <div class="footer-wrapper">
       <h2>明石高専高専祭<br>2024</h2>
@@ -103,13 +133,13 @@
       <!-- SNSボタン -->
       <ul class="snsbtniti">
           <li><a href="https://x.com/nitacfesta" target="_blank" class="flowbtn9">
-              <img loading="lazy" class="sns_logo" src="x_logo.png" alt="X Twitter"></a></li>
+              <img loading="lazy" class="sns_logo" src="/img/x_logo.png" alt="X Twitter"></a></li>
           <li><a href="https://www.instagram.com/nitacfesta" target="_blank" class="flowbtn9">
-              <img loading="lazy" class="sns_logo" src="instagram_logo.png" alt="Instagram"></a></li>
+              <img loading="lazy" class="sns_logo" src="/img/instagram_logo.png" alt="Instagram"></a></li>
       </ul>
       <!-- 画像 -->
       <div class="footer-voltage">
-          <img src="voltage.png" alt="voltage">
+          <img src="/img/voltage.png" alt="voltage">
       </div>
 
       <!-- フッター -->
@@ -123,7 +153,7 @@
               <!-- SNSリンク -->
               <div class="right">
                   <a href="https://x.com/nitacwpl" target="_blank" class="flowbtn9-2">
-                      <img loading="lazy" class="sns_logo_ft" src="x_logo.png" alt="X Twitter"></a>
+                      <img loading="lazy" class="sns_logo_ft" src="/img/x_logo.png" alt="X Twitter"></a>
               </div>
           </div>
 
@@ -136,9 +166,9 @@
               <!-- SNSリンク -->
               <div class="right">
                   <a href="https://x.com/nitacfesta" target="_blank" class="flowbtn9-2">
-                      <img loading="lazy" class="sns_logo_ft" src="x_logo.png" alt="X Twitter"></a>
+                      <img loading="lazy" class="sns_logo_ft" src="/img/x_logo.png" alt="X Twitter"></a>
                   <a href="https://instagram.com/nitacfesta" target="_blank" class="flowbtn9-2">
-                      <img loading="lazy" class="sns_logo_ft" src="instagram_logo.png" alt="Instagram"></a>
+                      <img loading="lazy" class="sns_logo_ft" src="/img/instagram_logo.png" alt="Instagram"></a>
               </div>
           </div>
 
@@ -162,6 +192,6 @@
 </div>
 </div>
 
-<script src="top.js"></script>
+<script src="/javascript/top.js"></script>
 </body>
 </html>
