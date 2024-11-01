@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>top-page</title>
   <link rel="stylesheet" href="/css/top.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/top-exhibition.css">
+  <link rel="stylesheet" href="/css/top-bazaar.css">
   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 </head>
 <body>
@@ -12,23 +15,86 @@
     <video id="opening-video" autoplay muted>
         <source src="/video/try_animation_1.mp4" type="video/mp4">
     </video>
-</div>
+  </div>
   <br>
+    
+  <div class="openbtn1"> 
+    <span></span><span></span>    
+  </div>
+        <!--↑2本線のメニューボタン-->   
+
+
+
+
+        <!--↓メニューを開いて出てくる案内-->
+    <nav id="g-nav">
+    <div id="g-nav-list">
+      <div class="contents">
+    <input id="acd-check1" class="acd-check" type="checkbox">
+    <label class="acd-label" for="acd-check1"><a href="https://www.figma.com/design/BhmVDnOvXUmWymBDoosA7O/NITACFES2024?node-id=3-12&node-type=FRAME&t=IyKhXd4ECxN4Xg8l-0">
+                                                ホーム</a></label>
+                                              
+                                            
+    <input id="acd-check3" class="acd-check" type="checkbox">
+    <label id="acd-label1" class="acd-label" for="acd-check3"><div id="triangle1"></div>イベント</label>
+    <div class="acd-content1">
+        <p><a href="nitacwpl.tech">一日目</a></p>
+        <p><a href="nitacwpl.tech">二日目</a></p>
+        <p><a href="nitacwpl.tech">ゲスト</a></p>
+    </div>
+
+
+    <input id="acd-check4" class="acd-check" type="checkbox">
+    <label id="acd-label2" class="acd-label" for="acd-check4"><a href="html/tenji.html">展示</a></label>
+
+
+    <input id="acd-check5" class="acd-check" type="checkbox">
+    <label id="acd-label3" class="acd-label" for="acd-check5"><div id="triangle3"></div>バザー</label>
+    <div class="acd-content3">
+        <p><a href="nitacwpl.tech">食品</a></p>
+        <p><a href="nitacwpl.tech">非食品</a></p>
+    </div>
+    <input id="acd-check6" class="acd-check" type="checkbox">
+    <label class="acd-label" for="acd-check6"><a href="html/TimeTableTop.html">タイムテーブル</a></label>
+    <input id="acd-check7" class="acd-check" type="checkbox">
+    <label class="acd-label" for="acd-check7"><a href="html/access.html">アクセス</a></label>
+    <input id="acd-check8" class="acd-check" type="checkbox">
+    <label class="acd-label" for="acd-check8"><a href="html/FAQ.html">FAQ</a></label>
+
+       <!--↑ここまで案内表示-->
+
+
+
+
+
+    </div>
+    </div>
+    </nav>
+
+  <div class="circle-bg"></div>
+      <!--↑circle-bgという大きな円を拡大して背景色を変化させています-->
+
+
+      <!--↓JSファイルの呼び出し-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+  <script src="javascript/menu.js"></script>
+  </div>
+
 
   <div class="top-title">
     <div class="title-image">
-      <img src="/img/title.svg" alt="">
+      <img src="img/title.svg" alt="">
     </div>
 
     <div class="day-image">
-      <img src="/img/day.svg" alt="">
+      <img src="img/day.svg" alt="">
     </div>
   </div>
 
   <div class="top-access">
     <div class="flexbox">
       <div class="access-image">
-         <img src="/img/access-title.svg" alt=""> 
+         <img src="img/access-title.svg" alt=""> 
       </div>
       <a href="https://maps.app.goo.gl/F3u2foShKT98khvg7" style="text-align: center;"><img src="/img/map.png" alt="" class="map-image"></a>
       <p class="address-sentence">JR魚住駅から徒歩5分</p>
@@ -37,7 +103,7 @@
           <p class="map">→グーグルマップで見る</p>
       </a>
       <br>
-      <a href="">
+      <a href="html/access.html">
           <p class="map">→校内マップはこちら</p>
       </a>
       <div class="left-align-section">
@@ -49,12 +115,45 @@
   </div>
 
   <div class="top-exhibition">
-    <div style="text-align: center;">
-      <h1 class="exhibition-title">Exhibition</h1>
+    <div class="exhibition-container">
+      <!-- タイトル -->
+      <div class="title-exhibition">Exhibition</div>
+    
+      <!-- スライドショーコンテナ -->
+      <div id="slideshow1" class="slideshow-container">
+        <!-- 左矢印ボタン -->
+        <div class="arrow left" onclick="changeSlide1(-1)">&#10094;</div>
+        <!-- スライド 1〜10 -->
+        <div class="slide1"><img src="img/1-4.png" alt="写真1-1"></div>
+        <div class="slide1"><img src="img/3C.png" alt="写真1-2"></div>
+        <div class="slide1"><img src="img/4A.png" alt="写真1-3"></div>
+        <div class="slide1"><img src="img/kotsuken.png" alt="写真1-4"></div>
+        <div class="slide1"><img src="img/1-1.png" alt="写真1-5"></div>
+        <div class="slide1"><img src="img/2-4.png" alt="写真1-6"></div>
+        <div class="slide1"><img src="img/ekoran.png" alt="写真1-7"></div>
+        <div class="slide1"><img src="img/3M.png" alt="写真1-8"></div>
+        <div class="slide1"><img src="img/4E.png" alt="写真1-9"></div>
+        <div class="slide1"><img src="img/2-2.png" alt="写真1-10"></div>
+        <!-- 右矢印ボタン -->
+    <div class="arrow right" onclick="changeSlide1(1)">&#10095;</div>
+    </div>
+
+<!-- ドットナビゲーション -->
+    <div class="dot-container">
+       <span class="dot1" onclick="currentSlide1(1)"></span>
+      <span class="dot1" onclick="currentSlide1(2)"></span>
+      <span class="dot1" onclick="currentSlide1(3)"></span>
+      <span class="dot1" onclick="currentSlide1(4)"></span>
+      <span class="dot1" onclick="currentSlide1(5)"></span>
+      <span class="dot1" onclick="currentSlide1(6)"></span>
+      <span class="dot1" onclick="currentSlide1(7)"></span>
+      <span class="dot1" onclick="currentSlide1(8)"></span>
+      <span class="dot1" onclick="currentSlide1(9)"></span>
+      <span class="dot1" onclick="currentSlide1(10)"></span>
     </div>
     
-    <div style="text-align:end;">
-      <a href="https://www.google.co.jp/"  class="more">more➪ </a>
+      <!-- MOREリンク -->
+      <a href="html/tenji.html" class="more-link">MORE →</a>
     </div>
   </div>
   
@@ -62,17 +161,56 @@
      <img src="/img/neon-gutar.png" alt="">
   </div>
 
-  <div class="top-bazzar" style="text-align: center;">
-    <div class="bazzar-p">
-
+  <div class="top-bazaar" style="text-align: center;">
+    <div class="bazaar-container">
+      <!-- タイトル -->
+      <div class="title-bazaar">Bazaar</div>
+    
+      <!-- スライドショーコンテナ -->
+      <div id="slideshow2" class="slideshow-container">
+        <!-- 左矢印ボタン -->
+        <div class="arrow left" onclick="changeSlide2(-1)">&#10094;</div>
+        <!-- スライド 1〜10 -->
+        <div class="slide2"><img src="/img/track_and_field.png" alt="写真2-1"></div>
+        <div class="slide2"><img src="/img/softtennis.png" alt="写真2-2"></div>
+        <div class="slide2"><img src="/img/jikkoiin.png" alt="写真2-3"></div>
+        <div class="slide2"><img src="/img/tabletennis.png" alt="写真2-4"></div>
+        <div class="slide2"><img src="/img/bugei.png" alt="写真2-5"></div>
+        <div class="slide2"><img src="/img/ushioryo.jpg" alt="写真2-6"></div>
+        <div class="slide2"><img src="/img/handball.png" alt="写真2-7"></div>
+        <div class="slide2"><img src="/img/硬式テニス部.png" alt="写真2-8"></div>
+        <div class="slide2"><img src="/img/danbasu.png" alt="写真2-9"></div>
+        <div class="slide2"><img src="/img/ESS.png" alt="写真2-10"></div>
+        <!-- 右矢印ボタン -->
+        <div class="arrow right" onclick="changeSlide2(1)">&#10095;</div>
+      </div>
+      
+      <!-- ドットナビゲーション -->
+      <div class="dot-container">
+        <span class="dot2" onclick="currentSlide2(1)"></span>
+        <span class="dot2" onclick="currentSlide2(2)"></span>
+        <span class="dot2" onclick="currentSlide2(3)"></span>
+        <span class="dot2" onclick="currentSlide2(4)"></span>
+        <span class="dot2" onclick="currentSlide2(5)"></span>
+        <span class="dot2" onclick="currentSlide2(6)"></span>
+        <span class="dot2" onclick="currentSlide2(7)"></span>
+        <span class="dot2" onclick="currentSlide2(8)"></span>
+        <span class="dot2" onclick="currentSlide2(9)"></span>
+        <span class="dot2" onclick="currentSlide2(10)"></span>
+      </div>
+      
+      
+    
+      <!-- MOREリンク -->
+      <a href="html/bazaar.html" class="more-link">MORE →</a>
     </div>
   </div>
   
   <br>
   <br>
   <div class="top-timetable" style="text-align: center;">
-    <img src="/img/poster-all.svg" class="poster1"> 
-    <img src="/img/poster-music.svg" class="poster2">
+    <a href="html/timetable_all_1109.html"><img src="img/poster-all.svg" class="poster1"></a> 
+    <a href="html/timetable_music_1109.html"><img src="img/poster-music.svg" class="poster2"></a>
   </div>
   <br>
   <br>
@@ -83,12 +221,12 @@
       <div class="text-section">
         <h2>高専祭感想<br>アンケート</h2>
         <p>ぜひアンケートのご協力お願いします！</p>
-        <a href="https://example.com" class="button">CLICK!!</a>
+        <a href="" class="button">CLICK!!</a>
       </div>
       
       <!-- 右半分 -->
       <div class="image-section">
-        <img src="/img/questionary-image.svg" alt="雷の画像">
+        <img src="img/questionary-image.svg" alt="雷の画像">
       </div>
     </div>
   </div>
@@ -106,23 +244,23 @@
   </div>
 
   <div class="top-banner">
-    <a href="https://example.com" target="_blank" class="banner-ad">
-      <img src="/img/sujinikomi_hukujyu.jpg" alt="広告バナー1">
+    <a href="https://suji-fukuju.com/" target="_blank" class="banner-ad">
+      <img src="img/sujinikomi_hukujyu.jpg" alt="広告バナー1">
     </a>
     <a href="https://example.com" target="_blank" class="banner-ad">
-      <img src="/img/kaihotunoen.jpg" alt="広告バナー2">
+      <img src="img/kaihotunoen.jpg" alt="広告バナー2">
     </a>
-    <a href="https://example.com" target="_blank" class="banner-ad">
-      <img src="/img/sibahara_seikeigeka.jpg" alt="広告バナー3">
+    <a href="https://shibahara-seikei.jp/" target="_blank" class="banner-ad">
+      <img src="img/sibahara_seikeigeka.jpg" alt="広告バナー3">
     </a>
-    <a href="https://example.com" target="_blank" class="banner-ad">
-      <img src="/img/9th.jpg" alt="広告バナー4">
+    <a href="https://www.studio9th.jp/" target="_blank" class="banner-ad">
+      <img src="img/9th.jpg" alt="広告バナー4">
     </a>
-    <a href="https://example.com" target="_blank" class="banner-ad">
-      <img src="/img/locohome.jpg" alt="広告バナー5">
+    <a href="https://locohome.net/" target="_blank" class="banner-ad">
+      <img src="img/locohome.jpg" alt="広告バナー5">
     </a>
-    <a href="https://example.com" target="_blank" class="banner-ad">
-      <img src="/img/akashi-kikai_industry.jpg" alt="広告バナー6">
+    <a href="https://akasi-kk.co.jp/" target="_blank" class="banner-ad">
+      <img src="img/akashi-kikai_industry.jpg" alt="広告バナー6">
     </a> 
   </div>
 
@@ -133,13 +271,13 @@
       <!-- SNSボタン -->
       <ul class="snsbtniti">
           <li><a href="https://x.com/nitacfesta" target="_blank" class="flowbtn9">
-              <img loading="lazy" class="sns_logo" src="/img/x_logo.png" alt="X Twitter"></a></li>
+              <img loading="lazy" class="sns_logo" src="img/x_logo.png" alt="X Twitter"></a></li>
           <li><a href="https://www.instagram.com/nitacfesta" target="_blank" class="flowbtn9">
-              <img loading="lazy" class="sns_logo" src="/img/instagram_logo.png" alt="Instagram"></a></li>
+              <img loading="lazy" class="sns_logo" src="img/instagram_logo.png" alt="Instagram"></a></li>
       </ul>
       <!-- 画像 -->
       <div class="footer-voltage">
-          <img src="/img/voltage.png" alt="voltage">
+          <img src="img/voltage.png" alt="voltage">
       </div>
 
       <!-- フッター -->
@@ -153,7 +291,7 @@
               <!-- SNSリンク -->
               <div class="right">
                   <a href="https://x.com/nitacwpl" target="_blank" class="flowbtn9-2">
-                      <img loading="lazy" class="sns_logo_ft" src="/img/x_logo.png" alt="X Twitter"></a>
+                      <img loading="lazy" class="sns_logo_ft" src="img/x_logo.png" alt="X Twitter"></a>
               </div>
           </div>
 
@@ -166,9 +304,9 @@
               <!-- SNSリンク -->
               <div class="right">
                   <a href="https://x.com/nitacfesta" target="_blank" class="flowbtn9-2">
-                      <img loading="lazy" class="sns_logo_ft" src="/img/x_logo.png" alt="X Twitter"></a>
+                      <img loading="lazy" class="sns_logo_ft" src="img/x_logo.png" alt="X Twitter"></a>
                   <a href="https://instagram.com/nitacfesta" target="_blank" class="flowbtn9-2">
-                      <img loading="lazy" class="sns_logo_ft" src="/img/instagram_logo.png" alt="Instagram"></a>
+                      <img loading="lazy" class="sns_logo_ft" src="img/instagram_logo.png" alt="Instagram"></a>
               </div>
           </div>
 
@@ -192,6 +330,6 @@
 </div>
 </div>
 
-<script src="/javascript/top.js"></script>
+<script src="javascript/top.js"></script>
 </body>
 </html>
